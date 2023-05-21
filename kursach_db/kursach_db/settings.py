@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'kursach_db.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-
+# hureo
 
 DATABASES = {
     'default': {
