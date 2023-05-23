@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% block content %}
+  <h1>User info</h1>
+{#    {% if user_data %}#}
+{#        <div>#}
+{#        <h1>Имя: {{ user_data.first_name|capfirst }} {{ user_data.last_name|capfirst }}</h1>#}
+{#        </div>#}
+{#    {% endif %}#}
+    {% if request.user.is_authenticated %}
+        username: {{ request.user.username }}
+        {{ form.as_p }}
+        <input type="submit" name="sub" value="Изменить">
+        {{ msg_theme }}
+    {% endif %}
 
-</body>
-</html>
+{% endblock %}

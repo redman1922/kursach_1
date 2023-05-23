@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 
 
 class Employee(models.Model):
@@ -27,7 +28,6 @@ def profile_picture_directory_path(instance: "Profile", filename: str) -> str:
 
 class Profile(models.Model):
     class Meta:
-        ordering = ["-pk"]
         verbose_name = "профиль"
         verbose_name_plural = "профили"
 
@@ -41,16 +41,15 @@ class Profile(models.Model):
     picture = models.ImageField(null=True, blank=True, upload_to=profile_picture_directory_path)
     study_type = models.CharField(max_length=30, null=True, blank=True)
     study_place = models.CharField(max_length=100, null=True, blank=True)
-    reg_date = models.DateTimeField(auto_created=False)
-    registrar = models.ForeignKey(Employee, on_delete=models.PROTECT, related_name="registrar")
+    reg_date = models.DateTimeField(auto_now_add=True)
+    registrar = models.ForeignKey(Employee, on_delete=models.PROTECT, related_name="registrar", null=True)
     # фамилия регистрирующего
     comment = models.TextField(max_length=500, null=True, blank=True)
-    last_update = models.DateTimeField(auto_created=True)
     # фамилия удалившего в архив
-    experience = models.BooleanField(null=False)
-    payment = models.DecimalField(max_digits=100, decimal_places=2, null=False, blank=True)
+    experience = models.BooleanField(default=False)
+    payment = models.DecimalField(default=0, max_digits=100, decimal_places=2, null=False, blank=True)
     archived = models.BooleanField(default=False)
-    archivist = models.ForeignKey(Employee, on_delete=models.PROTECT, related_name="archivist")
+    archivist = models.ForeignKey(Employee, on_delete=models.PROTECT, related_name="archivist", null=True)
 
     def __str__(self):
-        return f"Profile ({self.pk}) {self.last_name} {self.first_name}"
+        return f"Profile ({self.pk}) {self.user.first_name} {self.user.last_name}"
