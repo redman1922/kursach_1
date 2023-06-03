@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="981f6459-a37d-44aa-b883-a1d86e35333d" name="Changes" comment="add profile and employee">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="981f6459-a37d-44aa-b883-a1d86e35333d" name="Changes" comment="cheta da sdelal">
+      <change beforePath="$PROJECT_DIR$/.idea/pythonProject1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/templates/auth_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/templates/auth_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/templates/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kursach_db/kursach_db/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/kursach_db/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kursach_db/kursach_db/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/kursach_db/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +28,7 @@
       <list>
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -48,14 +51,22 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/User/PycharmProjects/pythonProject1",
+    "last_opened_file_path": "C:/Users/User/PycharmProjects/pythonProject1/kursach_db/media/css",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\pythonProject1\kursach_db\media\css" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonProject1" />
@@ -95,7 +106,18 @@
       <workItem from="1684692785753" duration="71000" />
       <workItem from="1684762499335" duration="3366000" />
       <workItem from="1684835027814" duration="7083000" />
-      <workItem from="1684859123870" duration="3077000" />
+      <workItem from="1684859123870" duration="3134000" />
+      <workItem from="1685269134468" duration="113000" />
+      <workItem from="1685288631439" duration="50000" />
+      <workItem from="1685292159722" duration="5391000" />
+      <workItem from="1685300144736" duration="857000" />
+      <workItem from="1685357703859" duration="72000" />
+      <workItem from="1685361861884" duration="1210000" />
+      <workItem from="1685366794806" duration="677000" />
+      <workItem from="1685375769789" duration="2149000" />
+      <workItem from="1685457069724" duration="442000" />
+      <workItem from="1685782890768" duration="2234000" />
+      <workItem from="1685790993344" duration="975000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1684660811347</created>
@@ -139,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684765265318</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="cheta da sdelal">
+      <created>1684862294776</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684862294776</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +190,7 @@
     <MESSAGE value="add auth_profile" />
     <MESSAGE value="add media update" />
     <MESSAGE value="add profile and employee" />
-    <option name="LAST_COMMIT_MESSAGE" value="add profile and employee" />
+    <MESSAGE value="cheta da sdelal" />
+    <option name="LAST_COMMIT_MESSAGE" value="cheta da sdelal" />
   </component>
 </project>

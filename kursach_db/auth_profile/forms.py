@@ -10,129 +10,27 @@ class MyUserCreationForm(UserCreationForm):
         fields = ['username', 'email', 'password1', 'password2']
 
 
-class UserLoginForm(AuthenticationForm):
-    def __init__(self, *args, **kwargs):
-        super(UserLoginForm, self).__init__(*args, **kwargs)
-
-    username = UsernameField(
-        widget=forms.TextInput(
-            attrs={
-                'class': 'form-control form-control-lg',
-                'placeholder': 'Логин'
-            }
-        ),
-        label='Логин:'
-    )
-    password = forms.CharField(
-        widget=forms.PasswordInput(
-            attrs={
-                'class': 'form-control form-control-lg',
-                'placeholder': 'Пароль',
-            }
-        ),
-        label='Пароль:'
-    )
-
-
-class EditProfileForm(forms.Form):
-    first_name = forms.CharField(
-        max_length=50,
-        required=True,
-        widget=forms.TextInput(
-            attrs={
-                'class': 'form-control form-control-lg mb-3',
-                'placeholder': 'Имя'
-            }
-        )
-    )
-    username = forms.CharField(
-        max_length=50,
-        required=True,
-        widget=forms.TextInput(
-            attrs={
-                'class': 'form-control form-control-lg mb-3',
-                'placeholder': 'username'
-            }
-        )
-    )
-    last_name = forms.CharField(
-        max_length=50,
-        required=True,
-        widget=forms.TextInput(
-            attrs={
-                'class': 'form-control form-control-lg mb-3',
-                'placeholder': 'Фамилия'
-            }
-        )
-    )
-    age = forms.CharField(
-        max_length=3,
-        required=True,
-        widget=forms.TextInput(
-            attrs={
-                'class': 'form-control form-control-lg mb-3',
-                'placeholder': 'Паспорт'
-            }
-        )
-    )
-    passport = forms.CharField(
-        max_length=50,
-        required=True,
-        widget=forms.TextInput(
-            attrs={
-                'class': 'form-control form-control-lg mb-3',
-                'placeholder': 'Паспорт'
-            }
-        )
-    )
-    passport_region = forms.CharField(
-        max_length=50,
-        required=True,
-        widget=forms.TextInput(
-            attrs={
-                'class': 'form-control form-control-lg mb-3',
-                'placeholder': 'Кем выдан паспорт'
-            }
-        )
-    )
-    study_type = forms.CharField(
-        max_length=50,
-        required=True,
-        widget=forms.TextInput(
-            attrs={
-                'class': 'form-control form-control-lg mb-3',
-                'placeholder': 'Тип образования'
-            }
-        )
-    )
-    study_place = forms.CharField(
-        max_length=50,
-        required=True,
-        widget=forms.TextInput(
-            attrs={
-                'class': 'form-control form-control-lg mb-3',
-                'placeholder': 'Место обучения'
-            }
-        )
-    )
-    picture = forms.ImageField(
-        required=False,
-        widget=forms.FileInput(
-            attrs={
-                'class': 'custom-file-input',
-                'accept': '.jpg, .jpeg, .png'
-            }
-        )
-    )
-    experience = forms.BooleanField(
-        required=True,
-        widget=forms.CheckboxInput(
-        )
-    )
-
-
 class ProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = ("",)
+        fields = ("picture",
+                  "last_name",
+                  "first_name",
+                  "age",
+                  "passport",
+                  "passport_region",
+                  "study_type",
+                  "study_place",
+                  )
 
+    picture = forms.ImageField(
+        widget=forms.ClearableFileInput(attrs={"multiple": True}),
+        required=False,
+    )
+    last_name = forms.TextInput()
+    first_name = forms.TextInput()
+    age = forms.NumberInput()
+    passport = forms.TextInput()
+    passport_region = forms.TextInput()
+    study_type = forms.TextInput()
+    study_place = forms.TextInput()

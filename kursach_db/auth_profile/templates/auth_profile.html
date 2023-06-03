@@ -1,3 +1,4 @@
+{% extends 'main.html' %}
 {% block content %}
   <h1>User info</h1>
 {#    {% if user_data %}#}
@@ -7,9 +8,21 @@
 {#    {% endif %}#}
     {% if request.user.is_authenticated %}
         username: {{ request.user.username }}
-        {{ form.as_p }}
-        <input type="submit" name="sub" value="Изменить">
-        {{ msg_theme }}
+        {%if user.profile.picture%}
+          <div><img width="300" height="300" src="{{user.profile.picture.url}}" alt="{{user.profile.picture.name}}"></div>
+        {%else%}
+          <p>User have no avatar</p>
+        {%endif%}
+        <div>
+          <form method="post" enctype="multipart/form-data">
+            {% csrf_token%}
+            {{form.as_p }}
+            <button type="submit">Change info</button>
+          </form>
+        </div>
+        <a href="{% url 'auth:profile' %}">Back to profile</a>
+    {% else %}
+        <h1>User is anonymous</h1>
     {% endif %}
 
 {% endblock %}
