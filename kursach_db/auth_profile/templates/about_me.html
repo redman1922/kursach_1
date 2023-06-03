@@ -1,0 +1,24 @@
+{% extends 'main.html' %}
+
+{% block title %}
+  About me
+{% endblock %}
+
+{% block content %}
+    <h1>User info</h1>
+    {% if user.is_authenticated %}
+        <h2>Detail</h2>
+        {% if user.profile.picture %}
+            <div>
+            <img width="150" height="150" src="{{user.profile.picture.url}}" alt="{{user.profile.picture.name}}">
+            </div>
+        {% endif %}
+        <p>Username: {{ user.username }}</p>
+        <p>First name: {{ user.profile.first_name }}</p>
+        <p>Last name: {{ user.profile.last_name }}</p>
+
+        <a href="{% url 'auth:profile_update' %}">Update profile</a>
+    {% else %}
+        <h2>User is anonymous</h2>
+    {% endif %}
+{% endblock %}
