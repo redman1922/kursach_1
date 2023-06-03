@@ -6,7 +6,12 @@
     <title>Title</title>
 </head>
 <body>
-    <a href="{% url '' %}"></a>
+<div>
+    <a href="{% url 'auth:login' %}">Login</a>
+    <a href="{% url 'auth:logout' %}">Logout</a>
+    <a href="{% url 'auth:profile' %}">My profile</a>
+    <a href="{% url 'job:vacancy_list' %}">Vacancy list</a>
+</div>
     {% block content %}
 
     {% endblock %}

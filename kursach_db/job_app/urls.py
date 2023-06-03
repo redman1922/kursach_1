@@ -5,7 +5,7 @@ from .views import (
     CompanyDetailView,
 )
 
-app_name = "vacancy"
+app_name = "job"
 
 urlpatterns = [
     path('', VacancyListView.as_view(), name="vacancy_list"),

@@ -6,4 +6,7 @@
         {{ form.as_p }}
         <input class="btn btn-lg btn-primary" type="submit" name="sub" value="Авторизация">
     </form>
+    <div>
+    <a href="{% url 'auth:register' %}">Register</a>
+    </div>
 {% endblock %}
