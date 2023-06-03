@@ -11,7 +11,8 @@ class VacancyListView(ListView):
 
 class VacancyDetailView(DetailView):
     model = Vacancy
-    template_name = ""
+    template_name = "job_app/vacancy_detail.html"
+    context_object_name = "vacancy"
 
 
 class CompanyDetailView(DetailView):

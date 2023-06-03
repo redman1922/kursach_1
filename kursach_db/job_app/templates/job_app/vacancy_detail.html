@@ -1,0 +1,6 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <p>{{ vacancy.title }}</p>
+    <a href="{% url 'job:vacancy_list' %}">Back to list</a>
+{% endblock %}

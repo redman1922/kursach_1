@@ -3,6 +3,6 @@
 {% block content %}
     <h1>Vacancy List</h1>
     {% for vacancy in vacancies %}
-        <h1>{{ vacancy.title }}</h1>
+        <a href="{% url 'job:vacancy_detail' pk=vacancy.pk %}">{{ vacancy.title }}</a>
     {% endfor %}
 {% endblock %}
