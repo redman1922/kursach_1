@@ -5,20 +5,21 @@
 {% endblock %}
 
 {% block content %}
-    <h1>User info</h1>
+<div class="wrapper-login">
+    <h1 style="margin:20px 0;">User info</h1>
     {% if user.is_authenticated %}
-        <h2>Detail</h2>
         {% if user.profile.picture %}
             <div>
-            <img width="150" height="150" src="{{user.profile.picture.url}}" alt="{{user.profile.picture.name}}">
+                <img width="150" height="150" src="{{user.profile.picture.url}}" alt="{{user.profile.picture.name}}">
             </div>
         {% endif %}
-        <p>Username: {{ user.username }}</p>
-        <p>First name: {{ user.profile.first_name }}</p>
-        <p>Last name: {{ user.profile.last_name }}</p>
+        <p style="font-size:24px; margin:20px 0;">Username: {{ user.username }}</p>
+        <p style="font-size:24px; margin:20px 0;">First name: {{ user.profile.first_name }}</p>
+        <p style="font-size:24px; margin:20px 0;">Last name: {{ user.profile.last_name }}</p>
 
-        <a href="{% url 'auth:profile_update' %}">Update profile</a>
+        <a style="text-decoration:underline dotted;" href="{% url 'auth:profile_update' %}"><strong>Update profile</strong></a>
     {% else %}
         <h2>User is anonymous</h2>
     {% endif %}
+</div>
 {% endblock %}

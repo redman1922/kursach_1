@@ -1,28 +1,29 @@
 {% extends 'main.html' %}
 {% block content %}
-  <h1>User info</h1>
-{#    {% if user_data %}#}
-{#        <div>#}
-{#        <h1>Имя: {{ user_data.first_name|capfirst }} {{ user_data.last_name|capfirst }}</h1>#}
-{#        </div>#}
-{#    {% endif %}#}
+<div class="wrapper-profile">
+    <div style="text-align:center">
+        <h1>User info</h1>
+    </div>
     {% if request.user.is_authenticated %}
-        username: {{ request.user.username }}
-        {%if user.profile.picture%}
-          <div><img width="300" height="300" src="{{user.profile.picture.url}}" alt="{{user.profile.picture.name}}"></div>
-        {%else%}
-          <p>User have no avatar</p>
-        {%endif%}
-        <div>
-          <form method="post" enctype="multipart/form-data">
+    <p style="font-size:20px; text-align:center; margin:20px 0;">username: {{ request.user.username }}</p>
+    {%if user.profile.picture%}
+    <div style="text-align:center; margin:0 0 20px;"><img width="300" height="300" src="{{user.profile.picture.url}}" alt="{{user.profile.picture.name}}"></div>
+    {%else%}
+    <p>User have no avatar</p>
+    {%endif%}
+    <div>
+        <form method="post" enctype="multipart/form-data">
             {% csrf_token%}
             {{form.as_p }}
-            <button type="submit">Change info</button>
-          </form>
-        </div>
-        <a href="{% url 'auth:profile' %}">Back to profile</a>
-    {% else %}
-        <h1>User is anonymous</h1>
-    {% endif %}
+            <div style="display:flex;justify-content:space-between; margin:40px 0 0; align-items:center; ">
+                <a style="display:block;" href="{% url 'auth:profile' %}">Back to profile</a>
+                <button class="login-button" type="submit">Change info</button>
+            </div>
+        </form>
+    </div>
 
+    {% else %}
+    <h1>User is anonymous</h1>
+    {% endif %}
+</div>
 {% endblock %}

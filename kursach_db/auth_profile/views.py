@@ -11,13 +11,11 @@ from django.contrib.auth import authenticate, login, logout
 
 from .models import Profile
 
-
 class LoginAuthView(LoginView):
     template_name = "auth.html"
 
     def get_success_url(self):
         return reverse("auth:profile")
-
 
 class RegisterView(CreateView):
     form_class = UserCreationForm

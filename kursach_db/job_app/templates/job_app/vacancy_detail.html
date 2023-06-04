@@ -1,6 +1,8 @@
 {% extends 'main.html' %}
 
 {% block content %}
-    <p>{{ vacancy.title }}</p>
+<div class="wrapper-login">
+    <p style="margin: 0 0 20px;">{{ vacancy.title }}</p>
     <a href="{% url 'job:vacancy_list' %}">Back to list</a>
+</div>
 {% endblock %}

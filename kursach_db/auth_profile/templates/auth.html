@@ -1,12 +1,15 @@
 {% extends "main.html" %}
 {% block content %}
+<div class="wrapper-login">
+    <h1 class="login-title">Login</h1>
     <form method="post">
         {% csrf_token %}
         {{ form.non_field_errors }}
         {{ form.as_p }}
-        <input class="btn btn-lg btn-primary" type="submit" name="sub" value="Авторизация">
+        <input class="login-button" type="submit" name="sub" value="Submit">
     </form>
     <div>
-    <a href="{% url 'auth:register' %}">Register</a>
+    <a class="login-register" href="{% url 'auth:register' %}">Register</a>
     </div>
+</div>
 {% endblock %}

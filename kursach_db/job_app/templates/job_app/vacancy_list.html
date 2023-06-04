@@ -1,8 +1,11 @@
 {% extends 'main.html' %}
 
 {% block content %}
-    <h1>Vacancy List</h1>
+<div class="wrapper-login">
+    <h1 style="margin:0 0 20px">Vacancy List</h1>
     {% for vacancy in vacancies %}
-        <a href="{% url 'job:vacancy_detail' pk=vacancy.pk %}">{{ vacancy.title }}</a>
+        <a style="border:1px solid black; box-sizing:border-box; padding:7px; border-radius:7px;"
+           href="{% url 'job:vacancy_detail' pk=vacancy.pk %}">{{ vacancy.title }}</a>
     {% endfor %}
+</div>
 {% endblock %}

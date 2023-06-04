@@ -1,19 +1,132 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+
+    *{
+    margin: 0;
+    padding: 0;
+    }
+
+    body{
+        background-color: #CCFF99;
+    }
+
+    a{
+       text-decoration:none;
+       color: black;
+       font-size:24px;
+    }
+
+     a:active{
+     opacity: 0.33;
+    }
+
+    input{
+    font-size:18px;
+    border-radius:5px;
+    box-sizing:border-box;
+    padding:5px;
+    margin:10px 0;
+    }
+
+    label{
+        font-size:22px;
+    }
+
+    .container{
+    max-width:1100px;
+    margin: 0 auto;
+    width:100%;
+    }
+
+    .navbar{
+    display:flex;
+    justify-content: space-around;
+    margin:40px 0 0;
+    }
+
+    .wrapper-content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:40px;
+    }
+
+    .wrapper-register{
+        background-color:white;
+        border-radius:10px;
+        box-sizing:border-box;
+        padding:40px;
+    }
+
+    .wrapper-login{
+background-color:white;
+    border-radius:10px;
+    box-sizing:border-box;
+    padding:40px;
+    text-align:center;
+    }
+
+    .login-title{
+    margin:0 0 20px;
+    }
+
+    .login-button{
+       background-color: #0E4732;
+       color:white;
+       margin:20px 0;
+       width:140px;
+       cursor:pointer;
+      padding:7px;
+      box-sizing: border-box;
+       border-radius: 5px;
+    }
+    .login-register{
+        display:block;
+        margin: 0 auto;
+        border:1px solid black;
+        box-sizing:border-box;
+       padding:5px;
+       border-radius:5px;
+       width:100px;
+    }
+    .wrapper-register span{
+    display:none
+    }
+    .wrapper-register ul{
+    display:none
+    }
+    .wrapper-register-button{
+    text-align:center;
+    margin:0 0 40px;
+    }
+
+    .wrapper-profile{
+        box-sizing:border-box;
+       padding:20px;
+       background-color:white;
+       border-radius:10px;
+    }
+
+    </style>
 </head>
 <body>
-<div>
-    <a href="{% url 'auth:login' %}">Login</a>
-    <a href="{% url 'auth:logout' %}">Logout</a>
-    <a href="{% url 'auth:profile' %}">My profile</a>
-    <a href="{% url 'job:vacancy_list' %}">Vacancy list</a>
-</div>
+<div class="container">
+    <div class="navbar">
+        <a href="{% url 'auth:profile' %}">My profile</a>
+        <a href="{% url 'job:vacancy_list' %}">Vacancy list</a>
+        <a href="{% url 'auth:login' %}">Login</a>
+        <a href="{% url 'auth:logout' %}">Logout</a>
+    </div>
+    <div class="wrapper-content">
     {% block content %}
 
     {% endblock %}
+    </div>
+</div>
 </body>
 </html>
