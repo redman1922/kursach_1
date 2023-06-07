@@ -4,17 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="981f6459-a37d-44aa-b883-a1d86e35333d" name="Changes" comment="Changes">
+    <list default="true" id="981f6459-a37d-44aa-b883-a1d86e35333d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/pythonProject1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_06_2023_22_51__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_06_2023_22_51__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_06_2023_22_51__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_06_2023_22_51__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/templates/about_me.html" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/templates/about_me.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/templates/auth.html" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/templates/auth.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/templates/auth_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/templates/auth_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/templates/login_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/templates/login_register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/templates/styles.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kursach_db/job_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/job_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kursach_db/job_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/job_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kursach_db/job_app/templates/job_app/vacancy_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/job_app/templates/job_app/vacancy_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kursach_db/job_app/templates/job_app/vacancy_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/job_app/templates/job_app/vacancy_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kursach_db/job_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/job_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,42 +32,33 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
-        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="cc304a7b9b0dd88f0bfa38c4b9cc3da69ef62459" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2LrdfmO22zDk7IyhmW1qmnwO1Yw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\PycharmProjects\pythonProject1\kursach_db\media\css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\PycharmProjects\kursach_1\static" />
-      <recent name="C:\Users\Admin\PycharmProjects\kursach_1\kursach_db\static" />
-      <recent name="C:\Users\Admin\PycharmProjects\kursach_1\kursach_db" />
-    </key>
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/sb_django/M_11_Files&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonProject1" />
@@ -98,141 +94,13 @@
       <workItem from="1684503089458" duration="6000" />
       <workItem from="1684513175933" duration="2764000" />
       <workItem from="1684574185726" duration="29000" />
-      <workItem from="1684659940566" duration="4889000" />
-      <workItem from="1684692785753" duration="71000" />
-      <workItem from="1684762499335" duration="3366000" />
-      <workItem from="1684835027814" duration="7083000" />
-      <workItem from="1684859123870" duration="3134000" />
-      <workItem from="1685269134468" duration="113000" />
-      <workItem from="1685288631439" duration="50000" />
-      <workItem from="1685292159722" duration="5391000" />
-      <workItem from="1685300144736" duration="857000" />
-      <workItem from="1685357703859" duration="72000" />
-      <workItem from="1685361861884" duration="1210000" />
-      <workItem from="1685366794806" duration="677000" />
-      <workItem from="1685375769789" duration="2149000" />
-      <workItem from="1685457069724" duration="442000" />
-      <workItem from="1685782890768" duration="2234000" />
-      <workItem from="1685790993344" duration="2958000" />
-      <workItem from="1685802818321" duration="1869000" />
-      <workItem from="1685821091387" duration="348000" />
+      <workItem from="1686056116227" duration="5750000" />
+      <workItem from="1686138322453" duration="6165000" />
+      <workItem from="1686146568659" duration="956000" />
     </task>
-    <task id="LOCAL-00001" summary="123">
-      <created>1684660811347</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1684660811347</updated>
-    </task>
-    <task id="LOCAL-00002" summary="123">
-      <created>1684661224237</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1684661224237</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add auth_profile">
-      <created>1684662792947</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1684662792947</updated>
-    </task>
-    <task id="LOCAL-00004" summary="add auth_profile">
-      <created>1684662803362</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1684662803362</updated>
-    </task>
-    <task id="LOCAL-00005" summary="add media update">
-      <created>1684663603190</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1684663603190</updated>
-    </task>
-    <task id="LOCAL-00006" summary="add profile and employee">
-      <created>1684765265318</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1684765265318</updated>
-    </task>
-    <task id="LOCAL-00007" summary="cheta da sdelal">
-      <created>1684862294776</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1684862294776</updated>
-    </task>
-    <task id="LOCAL-00008" summary="cheta da sdelal132">
-      <created>1685792061764</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1685792061764</updated>
-    </task>
-    <task id="LOCAL-00009" summary="cheta da sdelal132">
-      <created>1685792067949</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1685792067949</updated>
-    </task>
-    <task id="LOCAL-00010" summary="fix">
-      <created>1685804040219</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1685804040219</updated>
-    </task>
-    <task id="LOCAL-00011" summary="done">
-      <created>1685821392140</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1685821392140</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/home" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="123" />
-    <MESSAGE value="add auth_profile" />
-    <MESSAGE value="add media update" />
-    <MESSAGE value="add profile and employee" />
-    <MESSAGE value="cheta da sdelal" />
-    <MESSAGE value="cheta da sdelal132" />
-    <MESSAGE value="fix" />
-    <MESSAGE value="done" />
-    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
 </project>

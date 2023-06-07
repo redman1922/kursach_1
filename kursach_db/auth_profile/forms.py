@@ -21,6 +21,8 @@ class ProfileForm(forms.ModelForm):
                   "passport_region",
                   "study_type",
                   "study_place",
+                  "professions",
+                  "archived",
                   )
 
     picture = forms.ImageField(
@@ -34,3 +36,5 @@ class ProfileForm(forms.ModelForm):
     passport_region = forms.TextInput()
     study_type = forms.TextInput()
     study_place = forms.TextInput()
+    professions = forms.CheckboxSelectMultiple()
+    archived = forms.CheckboxInput()

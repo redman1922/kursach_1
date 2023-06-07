@@ -1,11 +1,25 @@
 {% extends 'main.html' %}
 
+{#{% block content %}#}
+{#<div class="wrapper-login">#}
+{#    <h1 style="margin:0 0 20px">Vacancy List</h1>#}
+{#    {% for vacancy in vacancies %}#}
+{#        <a style="border:1px solid black; box-sizing:border-box; padding:7px; border-radius:7px;"#}
+{#           href="{% url 'job:vacancy_detail' pk=vacancy.pk %}">{{ vacancy.title }}</a>#}
+{#        <p>{{ vacancy.price }}</p>#}
+{#        <p>{{ vacancy.companies.name }}</p>#}
+{#    {% endfor %}#}
+{#</div>#}
+{#{% endblock %}#}
+
 {% block content %}
-<div class="wrapper-login">
-    <h1 style="margin:0 0 20px">Vacancy List</h1>
+    <div>
+    <h1>Vacancy list</h1>
     {% for vacancy in vacancies %}
-        <a style="border:1px solid black; box-sizing:border-box; padding:7px; border-radius:7px;"
-           href="{% url 'job:vacancy_detail' pk=vacancy.pk %}">{{ vacancy.title }}</a>
+        <a href="{% url 'job:vacancy_detail' pk=vacancy.pk %}"> {{ vacancy.title }}</a>
+        {{ vacancy.company.name }}
+        {{ vacancy.price }}$
     {% endfor %}
-</div>
+    </div>
+
 {% endblock %}

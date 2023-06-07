@@ -3,6 +3,13 @@
 {% block content %}
 <div class="wrapper-login">
     <p style="margin: 0 0 20px;">{{ vacancy.title }}</p>
+    {{ vacancy.price }}
+    {{ vacancy.responsibilities }} обязанности
+    {{ vacancy.requirements }} требования
+    {{ vacancy.conditions }} условия
+    {{ vacancy.address }}
+
+    <a href="{% url 'job:company_detail' pk=vacancy.company.pk %}">{{ vacancy.company.name }}</a>
     <a href="{% url 'job:vacancy_list' %}">Back to list</a>
 </div>
 {% endblock %}

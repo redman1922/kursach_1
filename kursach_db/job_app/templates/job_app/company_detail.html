@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    {% if company.image %}
+        <div>
+            <img width="150" height="150" src="{{company.image.url}}" alt="{{company.image.name}}">
+        </div>
+    {% endif %}
+    {{ company.name }}
+    {{ company.comment }}
+    {% for vacancy in company.vacancy.all %}
+        <a href="{% url 'job:vacancy_detail' pk=vacancy.pk %}"> {{ vacancy.title }}</a>
+    {% endfor %}
+{% endblock %}

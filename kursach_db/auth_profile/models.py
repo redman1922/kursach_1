@@ -19,6 +19,17 @@ class Employee(models.Model):
         return f"Employee {self.pk} {self.last_name} {self.first_name}"
 
 
+class Professions(models.Model):
+    class Meta:
+        verbose_name = "профессия"
+        verbose_name_plural = "профессии"
+
+    name = models.CharField(max_length=100, null=False)
+
+    def __str__(self):
+        return f"{self.name}"
+
+
 def profile_picture_directory_path(instance: "Profile", filename: str) -> str:
     return "profiles/profile_{pk}/picture/{filename}".format(
         pk=instance.pk,
@@ -50,6 +61,7 @@ class Profile(models.Model):
     payment = models.DecimalField(default=0, max_digits=100, decimal_places=2, null=False, blank=True)
     archived = models.BooleanField(default=False)
     archivist = models.ForeignKey(Employee, on_delete=models.PROTECT, related_name="archivist", null=True)
+    professions = models.ManyToManyField(Professions, related_name="profile", null=True, blank=True)
 
     def __str__(self):
         return f"Profile ({self.pk}) {self.user.first_name} {self.user.last_name}"

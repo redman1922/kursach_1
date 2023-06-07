@@ -16,7 +16,14 @@
         <p style="font-size:24px; margin:20px 0;">Username: {{ user.username }}</p>
         <p style="font-size:24px; margin:20px 0;">First name: {{ user.profile.first_name }}</p>
         <p style="font-size:24px; margin:20px 0;">Last name: {{ user.profile.last_name }}</p>
+        <p style="font-size:30px; margin:40px 0 0 0;"><strong>Professions:</strong> </p>
 
+        {% for profession in user.profile.professions.all %}
+            <p style="font-size:24px; margin:20px 0;">{{ profession.name }}</p>
+        {% endfor %}
+        {% if user.profile.archived %}
+            ARCHIVED
+        {% endif %}
         <a style="text-decoration:underline dotted;" href="{% url 'auth:profile_update' %}"><strong>Update profile</strong></a>
     {% else %}
         <h2>User is anonymous</h2>
