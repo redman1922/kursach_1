@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="981f6459-a37d-44aa-b883-a1d86e35333d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythonProject1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_06_2023_22_51__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_06_2023_22_51__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_06_2023_22_51__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_06_2023_22_51__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/templates/about_me.html" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/templates/about_me.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/job_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/job_app/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/job_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/job_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/job_app/templates/job_app/vacancy_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/job_app/templates/job_app/vacancy_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/job_app/templates/job_app/vacancy_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/job_app/templates/job_app/vacancy_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/job_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/job_app/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="981f6459-a37d-44aa-b883-a1d86e35333d" name="Changes" comment="213" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="DENIS" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -47,18 +36,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/sb_django/M_11_Files&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
-  }
-}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonProject1" />
@@ -96,11 +73,34 @@
       <workItem from="1684574185726" duration="29000" />
       <workItem from="1686056116227" duration="5750000" />
       <workItem from="1686138322453" duration="6165000" />
-      <workItem from="1686146568659" duration="956000" />
+      <workItem from="1686146568659" duration="1398000" />
     </task>
+    <task id="LOCAL-00001" summary="213">
+      <created>1686147642644</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686147642644</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="213" />
+    <option name="LAST_COMMIT_MESSAGE" value="213" />
   </component>
 </project>
