@@ -1,15 +1,31 @@
 {% extends 'main.html' %}
 
 {% block content %}
-<div class="wrapper-login">
-    <p style="margin: 0 0 20px;">{{ vacancy.title }}</p>
-    {{ vacancy.price }}
-    {{ vacancy.responsibilities }} обязанности
-    {{ vacancy.requirements }} требования
-    {{ vacancy.conditions }} условия
-    {{ vacancy.address }}
-
-    <a href="{% url 'job:company_detail' pk=vacancy.company.pk %}">{{ vacancy.company.name }}</a>
+<div style="max-width:1100px;width:100%; box-sizing:border-box; padding:40px 100px" class="wrapper-login">
+    <div style="display:flex; justify-content: space-between;">
+        <div>
+            <h2>{{ vacancy.title }}</h2>
+            <span><strong>Зарплата:</strong> {{ vacancy.price }}</span>
+        </div>
+        <div>
+            <strong><a href="{% url 'job:company_detail' pk=vacancy.company.pk %}">{{ vacancy.company.name }}</a></strong>
+            <p><strong>Адрес:</strong> {{ vacancy.address }}</p>
+        </div>
+    </div>
+    <div>
+        <div style="margin:50px 0; display:flex; justify-content: space-between;">
+            <h2>Обязанности:</h2>
+            <p style="max-width:500px; width:100%; text-align:start;">{{ vacancy.responsibilities }} </p>
+        </div>
+        <div style="margin:50px 0; display:flex; justify-content: space-between;">
+            <h2>Требования:</h2>
+            <p style="max-width:500px; width:100%; text-align:start;">{{ vacancy.requirements }} </p>
+        </div>
+        <div style="margin:50px 0; display:flex; justify-content: space-between;">
+            <h2>Условия:</h2>
+            <p style="max-width:500px; width:100%; text-align:start;">{{ vacancy.conditions }} </p>
+        </div>
+    </div>
     <a href="{% url 'job:vacancy_list' %}">Back to list</a>
 </div>
 {% endblock %}

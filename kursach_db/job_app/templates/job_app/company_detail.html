@@ -1,14 +1,31 @@
 {% extends 'main.html' %}
 
 {% block content %}
-    {% if company.image %}
-        <div>
-            <img width="150" height="150" src="{{company.image.url}}" alt="{{company.image.name}}">
+<div style="max-width:1000px; width:100%;" class="wrapper-login">
+    <div style="display:flex;">
+        {% if company.image %}
+        <div style="margin:0 100px 0 0">
+            <img style="border-radius:70px;" width="150" height="150" src="{{company.image.url}}"
+                 alt="{{company.image.name}}">
         </div>
-    {% endif %}
-    {{ company.name }}
-    {{ company.comment }}
-    {% for vacancy in company.vacancy.all %}
-        <a href="{% url 'job:vacancy_detail' pk=vacancy.pk %}"> {{ vacancy.title }}</a>
-    {% endfor %}
+        {% endif %}
+        <div>
+            <div style="text-align:start; margin:0 0 60px">
+                <h2 style="margin:0 0 30px;">{{ company.name }}</h2>
+                <p>{{ company.comment }}</p>
+            </div>
+            <div style="text-align:start; display: flex;">
+                <h2 style="margin:0 30px 0 0;">Вакансии:</h2>
+                <ul>
+                {% for vacancy in company.vacancy.all %}
+                    <li>
+                        <strong><a href="{% url 'job:vacancy_detail' pk=vacancy.pk %}"> {{ vacancy.title }}</a></strong>
+                    </li>
+                {% endfor %}
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
 {% endblock %}
