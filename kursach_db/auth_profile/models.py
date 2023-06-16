@@ -46,7 +46,6 @@ class Profile(models.Model):
     last_name = models.CharField(max_length=20, null=False, db_index=True)
     first_name = models.CharField(max_length=20, null=False)
     age = models.IntegerField(default=0)
-    # city = models.ForeignKey(City)
     passport = models.CharField(max_length=20, null=False)
     passport_region = models.CharField(max_length=100, null=True, blank=True)
     picture = models.ImageField(null=True, blank=True, upload_to=profile_picture_directory_path)
@@ -54,9 +53,7 @@ class Profile(models.Model):
     study_place = models.CharField(max_length=100, null=True, blank=True)
     reg_date = models.DateTimeField(auto_now_add=True)
     registrar = models.ForeignKey(Employee, on_delete=models.PROTECT, related_name="registrar", null=True)
-    # фамилия регистрирующего
     comment = models.TextField(max_length=500, null=True, blank=True)
-    # фамилия удалившего в архив
     experience = models.BooleanField(default=False)
     payment = models.DecimalField(default=0, max_digits=100, decimal_places=2, null=False, blank=True)
     archived = models.BooleanField(default=False)

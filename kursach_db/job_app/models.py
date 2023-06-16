@@ -25,8 +25,6 @@ class Company(models.Model):
     name = models.CharField(max_length=100, null=False)
     comment = models.TextField(max_length=2000, null=True, blank=True)
     image = models.ImageField(null=True, blank=True, upload_to=image_company_directory_path)
-    # vacancies = models.ManyToManyField(Vacancy, related_name="companies", null=True)
-    # vacancies = models.ForeignKey
 
     def __str__(self):
         return f"Company {self.name}"

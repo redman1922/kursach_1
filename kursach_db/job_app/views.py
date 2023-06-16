@@ -8,12 +8,6 @@ class VacancyListView(ListView):
     template_name = "job_app/vacancy_list.html"
     context_object_name = "vacancies"
 
-# class VacancyListView(ListView):
-#     model = Company
-#     # queryset = Company.objects.filter()
-#     template_name = "job_app/vacancy_list.html"
-#     context_object_name = "companies"
-
 
 class VacancyDetailView(DetailView):
     model = Vacancy

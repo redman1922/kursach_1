@@ -1,13 +1,12 @@
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.models import User
 from django.contrib.auth.views import LoginView, LogoutView
 from django.http import HttpRequest
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import redirect, reverse
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView, CreateView
 
 from .forms import ProfileForm
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import authenticate, login
 
 from .models import Profile
 
@@ -74,7 +73,6 @@ class AboutMeUpdateView(TemplateView):
             profile_update.passport_region = passport_region
             profile_update.study_type = study_type
             profile_update.study_place = study_place
-            # profile_update.save()
             form.save()
             return redirect(request.path)
 

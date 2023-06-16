@@ -2,7 +2,7 @@
 
 {% block content %}
 <div style="max-width:1000px; width:100%;" class="wrapper-login">
-    <h1>Vacancy list</h1>
+    <h1>Список вакансий</h1>
     <div style="max-width:1000px; width:100%;">
         {% for vacancy in vacancies %}
             <div style="cursor: pointer;" onclick="window.location.href = '{% url 'job:vacancy_detail' pk=vacancy.pk %}';" class="vansy-cards">
