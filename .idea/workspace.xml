@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="981f6459-a37d-44aa-b883-a1d86e35333d" name="Changes" comment="123">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="981f6459-a37d-44aa-b883-a1d86e35333d" name="Changes" comment="almost done">
       <change beforePath="$PROJECT_DIR$/.idea/pythonProject1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_06_2023_22_51_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_06_2023_22_51__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/templates/about_me.html" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/templates/about_me.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/templates/auth.html" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/templates/auth.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/templates/login_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/templates/login_register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/auth_profile/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/auth_profile/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/job_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/job_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/job_app/templates/job_app/vacancy_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/job_app/templates/job_app/vacancy_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/job_app/templates/job_app/vacancy_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/job_app/templates/job_app/vacancy_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kursach_db/job_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/job_app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kursach_db/job_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/job_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/kursach_db/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/kursach_db/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +82,8 @@
       <workItem from="1686395789427" duration="45000" />
       <workItem from="1686564529830" duration="178000" />
       <workItem from="1686844245612" duration="1040000" />
-      <workItem from="1686920967728" duration="1540000" />
+      <workItem from="1686920967728" duration="1579000" />
+      <workItem from="1687182507610" duration="4126000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1686240412666</created>
@@ -111,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686240969383</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="almost done">
+      <created>1686922558948</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686922558948</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +125,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="123" />
-    <option name="LAST_COMMIT_MESSAGE" value="123" />
+    <MESSAGE value="almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost done" />
   </component>
 </project>
