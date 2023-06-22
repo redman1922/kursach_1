@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="981f6459-a37d-44aa-b883-a1d86e35333d" name="Changes" comment="almost done">
-      <change beforePath="$PROJECT_DIR$/.idea/pythonProject1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject1.iml" afterDir="false" />
+    <list default="true" id="981f6459-a37d-44aa-b883-a1d86e35333d" name="Changes" comment="done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/job_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/job_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kursach_db/job_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/job_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kursach_db/kursach_db/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/kursach_db/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kursach_db/kursach_db/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursach_db/kursach_db/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +83,8 @@
       <workItem from="1686564529830" duration="178000" />
       <workItem from="1686844245612" duration="1040000" />
       <workItem from="1686920967728" duration="1579000" />
-      <workItem from="1687182507610" duration="4126000" />
+      <workItem from="1687182507610" duration="5504000" />
+      <workItem from="1687442890875" duration="311000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1686240412666</created>
@@ -106,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686922558948</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="done">
+      <created>1687186706291</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687186706291</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +134,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="123" />
     <MESSAGE value="almost done" />
-    <option name="LAST_COMMIT_MESSAGE" value="almost done" />
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
 </project>
