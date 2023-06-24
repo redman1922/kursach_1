@@ -2,6 +2,10 @@ from django.db import models
 
 
 class Vacancy(models.Model):
+    class Meta:
+        verbose_name = "вакансия"
+        verbose_name_plural = "вакансии"
+
     title = models.CharField(max_length=50, null=False)
     price = models.DecimalField(decimal_places=2, max_digits=10, null=True, blank=True)
     responsibilities = models.TextField(null=True, blank=True, max_length=2000, verbose_name="обязанности")
@@ -22,6 +26,10 @@ def image_company_directory_path(instance: "Company", filename: str) -> str:
 
 
 class Company(models.Model):
+    class Meta:
+        verbose_name = "компания"
+        verbose_name_plural = "компании"
+
     name = models.CharField(max_length=100, null=False)
     comment = models.TextField(max_length=2000, null=True, blank=True)
     image = models.ImageField(null=True, blank=True, upload_to=image_company_directory_path)

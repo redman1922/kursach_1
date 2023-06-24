@@ -58,19 +58,14 @@ def get_pdf_1(request):
 
 
 def get_pdf_2(request):
-    # Create a file-like buffer to receive PDF data.
     buffer_1 = io.BytesIO()
     pdfmetrics.registerFont(TTFont('DejaVuSerif', 'DejaVuSerif.ttf', 'UTF-8'))
 
-    # Create the PDF object, using the buffer as its "file."
     p = canvas.Canvas(buffer_1, pagesize=A4)
-    # p.setFont('DejaVuSerif', 32)
 
     textobj = p.beginText()
     textobj.setTextOrigin(10, 700)
     textobj.setFont('DejaVuSerif', 14)
-    # Draw things on the PDF. Here's where the PDF generation happens.
-    # See the ReportLab documentation for the full list of functionality.
 
     lines = []
 
@@ -87,30 +82,22 @@ def get_pdf_2(request):
 
     p.drawText(textobj)
 
-    # Close the PDF object cleanly, and we're done.
     p.showPage()
     p.save()
 
-    # FileResponse sets the Content-Disposition header so that browsers
-    # present the option to save the file.
     buffer_1.seek(0)
     return FileResponse(buffer_1, as_attachment=True, filename='companies.pdf')
 
 
 def get_pdf_3(request):
-    # Create a file-like buffer to receive PDF data.
     buffer_1 = io.BytesIO()
     pdfmetrics.registerFont(TTFont('DejaVuSerif', 'DejaVuSerif.ttf', 'UTF-8'))
 
-    # Create the PDF object, using the buffer as its "file."
     p = canvas.Canvas(buffer_1, pagesize=A4)
-    # p.setFont('DejaVuSerif', 32)
 
     textobj = p.beginText()
     textobj.setTextOrigin(10, 700)
     textobj.setFont('DejaVuSerif', 14)
-    # Draw things on the PDF. Here's where the PDF generation happens.
-    # See the ReportLab documentation for the full list of functionality.
 
     lines = []
 
@@ -125,12 +112,9 @@ def get_pdf_3(request):
 
     p.drawText(textobj)
 
-    # Close the PDF object cleanly, and we're done.
     p.showPage()
     p.save()
 
-    # FileResponse sets the Content-Disposition header so that browsers
-    # present the option to save the file.
     buffer_1.seek(0)
     return FileResponse(buffer_1, as_attachment=True, filename='companies.pdf')
 

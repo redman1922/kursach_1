@@ -2,28 +2,28 @@
 {% block content %}
 <div class="wrapper-profile">
     <div style="text-align:center">
-        <h1>User info</h1>
+        <h1>Мой профиль</h1>
     </div>
     {% if request.user.is_authenticated %}
-    <p style="font-size:20px; text-align:center; margin:20px 0;">username: {{ request.user.username }}</p>
+    <p style="font-size:20px; text-align:center; margin:20px 0;">Почта: {{ request.user.username }}</p>
     {%if user.profile.picture%}
     <div style="text-align:center; margin:0 0 20px;"><img width="300" height="300" src="{{user.profile.picture.url}}" alt="{{user.profile.picture.name}}"></div>
     {%else%}
-    <p>User have no avatar</p>
+    <p style="text-align: center; margin: 20px 0;">У пользователя нет аватара</p>
     {%endif%}
-    <div>
+    <div class="wrapper-p-about">
         <form method="post" enctype="multipart/form-data">
             {% csrf_token%}
             {{form.as_p }}
-            <div style="display:flex;justify-content:space-between; margin:40px 0 0; align-items:center; ">
-                <a style="display:block;" href="{% url 'auth:profile' %}">Back to profile</a>
-                <button class="login-button" type="submit">Change info</button>
+            <div style=" margin:40px 0 0; width: 550px; text-align: center; ">
+                <button class="login-button" type="submit">Изменить</button>
+                <a style="display:block;" href="{% url 'auth:profile' %}">Обратно к профилю</a>
             </div>
         </form>
     </div>
 
     {% else %}
-    <h1>User is anonymous</h1>
+    <h1>Вы не зарегистрировались</h1>
     {% endif %}
 </div>
 {% endblock %}

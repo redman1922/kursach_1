@@ -16,5 +16,5 @@ urlpatterns = [
     path('company/<int:pk>/', CompanyDetailView.as_view(), name="company_detail"),
     path('pdf_1/', get_pdf_1, name='get-pdf-1'),
     path('pdf_2/', get_pdf_2, name='get-pdf-2'),
-    path('pdf_3/', get_pdf_3, name='get-pdf-2'),
+    path('pdf_3/', get_pdf_3, name='get-pdf-3'),
 ]

@@ -1,32 +1,42 @@
 {% extends 'main.html' %}
 
 {% block title %}
-  Мой профиль
+    Мой профилья
 {% endblock %}
 
 {% block content %}
-<div class="wrapper-login">
-    <h1 style="margin:20px 0;">Информация пользователя</h1>
-    {% if user.is_authenticated %}
-        {% if user.profile.picture %}
-            <div>
-                <img width="150" height="150" src="{{user.profile.picture.url}}" alt="{{user.profile.picture.name}}">
-            </div>
-        {% endif %}
-        <p style="font-size:24px; margin:20px 0;">Имя пользователя: {{ user.username }}</p>
-        <p style="font-size:24px; margin:20px 0;">Имя: {{ user.profile.first_name }}</p>
-        <p style="font-size:24px; margin:20px 0;">Фамилия: {{ user.profile.last_name }}</p>
-        <p style="font-size:30px; margin:40px 0 0 0;"><strong>Специализации:</strong> </p>
+    <div class="wrapper-login">
+        <h1 style="margin:20px 0;">Информация пользователя</h1>
+        {% if user.is_authenticated %}
+            {% if user.profile.picture %}
+                <div>
+                    <img width="150" height="150" src="{{ user.profile.picture.url }}"
+                         alt="{{ user.profile.picture.name }}">
+                </div>
 
-        {% for profession in user.profile.professions.all %}
-            <p style="font-size:24px; margin:20px 0;">{{ profession.name }}</p>
-        {% endfor %}
-        {% if user.profile.archived %}
-            ARCHIVED
+            {% endif %}
+            <p style="font-size:24px; margin:20px 0;">Имя пользователя: {{ user.username }}</p>
+            <p style="font-size:24px; margin:20px 0;">Имя: {{ user.profile.first_name }}</p>
+            <p style="font-size:24px; margin:20px 0;">Фамилия: {{ user.profile.last_name }}</p>
+
+            <p style="font-size:24px; margin:20px 0;">Поиск работы:
+                {% if user.profile.archived %}
+                    Не ищет
+                    {% else %}
+                    Ищет
+                {% endif %}
+
+            </p>
+
+            <p style="font-size:30px; margin:40px 0 0 0;"><strong>Специализации:</strong></p>
+
+            {% for profession in user.profile.professions.all %}
+                <p style="font-size:24px; margin:20px 0;">{{ profession.name }}</p>
+            {% endfor %}
+            <a style="text-decoration:underline dotted;" href="{% url 'auth:profile_update' %}"><strong>Изменить
+                профиль</strong></a>
+        {% else %}
+            <h2>Войдите в систему</h2>
         {% endif %}
-        <a style="text-decoration:underline dotted;" href="{% url 'auth:profile_update' %}"><strong>Изменить профиль</strong></a>
-    {% else %}
-        <h2>Войдите в систему</h2>
-    {% endif %}
-</div>
+    </div>
 {% endblock %}

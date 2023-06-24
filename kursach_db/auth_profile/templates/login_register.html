@@ -1,39 +1,41 @@
 {% extends 'main.html' %}
 
 {% block content %}
-<div class="wrapper-register">
+    <div class="wrapper-register">
 
-{% if page == 'login' %}
-<div>
-    <form  method="POST" action="">
-        {% csrf_token %}
+        {% if page == 'login' %}
+            <div>
+                <form method="POST" action="">
+                    {% csrf_token %}
 
-        <label>Username:</label>
-        <input type="text" name="username" placeholder="Enter Username" />
+                    <label>Username:</label>
+                    <input type="text" name="username" placeholder="Enter Username"/>
 
-        <label>Password:</label>
-        <input type="password" name="password" placeholder="Enter Password" />
+                    <label>Password:</label>
+                    <input type="password" name="password" placeholder="Enter Password"/>
 
-        <input  type="submit" value="Login" />
-    </form>
-    <a href="{% url 'register' %}">Sign up</a>
-</div>
+                    <input type="submit" value="Login"/>
+                </form>
+                <a href="{% url 'register' %}">Sign up</a>
+            </div>
 
-{% else %}
+        {% else %}
 
-<div>
-    <div class="wrapper-register-button">
-        <h1>Зарегистрироваться</h1>
+            <div>
+                <div class="wrapper-register-button">
+                    <h1>Зарегистрироваться</h1>
+                </div>
+                <div class="wrapper-p-form-1">
+                    <form method="POST" action="">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <div class="wrapper-register-button">
+                            <input class="login-button" type="submit" value="Регистрация"/>
+                        </div>
+                    </form>
+                </div>
+                {#    <a href="{% url 'login' %}">Login</a>#}
+            </div>
+        {% endif %}
     </div>
-    <form method="POST" action="">
-        {% csrf_token %}
-        {{form.as_p}}
-        <div class="wrapper-register-button">
-        <input class="login-button" type="submit" value="Register" />
-        </div>
-    </form>
-{#    <a href="{% url 'login' %}">Login</a>#}
-</div>
-{% endif %}
-</div>
 {% endblock content %}

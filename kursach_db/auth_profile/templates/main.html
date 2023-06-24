@@ -5,126 +5,147 @@
     <title>Title</title>
     <style>
 
-    *{
-    margin: 0;
-    padding: 0;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-    body{
-        background-color: #CCFF99;
-    }
+        body {
+            background-color: #CCFF99;
+        }
 
-    a{
-       text-decoration:none;
-       color: black;
-       font-size:24px;
-    }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+        }
 
-     a:active{
-     opacity: 0.33;
-    }
+        a:active {
+            opacity: 0.33;
+        }
 
-    input{
-    font-size:18px;
-    border-radius:5px;
-    box-sizing:border-box;
-    padding:5px;
-    margin:10px 0;
-    }
+        input {
+            font-size: 18px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            padding: 5px;
+            margin: 10px 0;
+        }
 
-    label{
-        font-size:22px;
-    }
+        label {
+            font-size: 22px;
+        }
 
-    .container{
-    max-width:1100px;
-    margin: 0 auto;
-    width:100%;
-    }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            width: 100%;
+        }
 
-    .navbar{
-    display:flex;
-    justify-content: space-around;
-    margin:40px 0 0;
-    }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0 0;
+        }
 
-    .wrapper-content{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin:40px;
-    }
+        .wrapper-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 40px;
+        }
 
-    .wrapper-register{
-        background-color:white;
-        border-radius:10px;
-        box-sizing:border-box;
-        padding:40px;
-    }
+        .wrapper-register {
+            background-color: white;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 40px;
+        }
 
-    .wrapper-login{
-background-color:white;
-    border-radius:10px;
-    box-sizing:border-box;
-    padding:40px;
-    text-align:center;
-    }
+        .wrapper-login {
+            background-color: white;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 40px;
+            text-align: center;
+        }
 
-    .login-title{
-    margin:0 0 20px;
-    }
+        .login-title {
+            margin: 0 0 20px;
+        }
 
-    .login-button{
-       background-color: #0E4732;
-       color:white;
-       margin:20px 0;
-       width:300px;
-       cursor:pointer;
-      padding:7px;
-      box-sizing: border-box;
-       border-radius: 5px;
-    }
-    .login-register{
-        display:block;
-        margin: 0 auto;
-        border:1px solid black;
-        box-sizing:border-box;
-       padding:5px;
-       border-radius:5px;
-       width:300px;
-    }
-    .wrapper-register span{
-    display:none
-    }
-    .wrapper-register ul{
-    display:none
-    }
-    .wrapper-register-button{
-    text-align:center;
-    margin:0 0 40px;
-    }
+        .login-button {
+            background-color: #0E4732;
+            color: white;
+            margin: 20px 0;
+            width: 300px;
+            cursor: pointer;
+            padding: 7px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
 
-    .wrapper-profile{
-        box-sizing:border-box;
-       padding:20px;
-       background-color:white;
-       border-radius:10px;
-    }
+        .login-register {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid black;
+            box-sizing: border-box;
+            padding: 5px;
+            border-radius: 5px;
+            width: 300px;
+        }
 
-    .vansy-cards{
-    display:flex;
-    justify-content:space-around;
-    border:1px solid gray;
-    height:70px; align-items:
-    center;
-    margin:20px 0;
-    border-radius:5px;
-    }
+        .wrapper-register span {
+            display: none
+        }
 
-    .vansy-cards:hover{
-        box-shadow: inset 1px 1px 10px black;
-    }
+        .wrapper-register ul {
+            display: none
+        }
+
+        .wrapper-register-button {
+            text-align: center;
+            margin: 0 0 40px;
+        }
+
+        .wrapper-profile {
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .vansy-cards {
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid gray;
+            height: 70px;
+            align-items: center;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .vansy-cards:hover {
+            box-shadow: inset 1px 1px 10px black;
+        }
+
+        .wrapper-p-form p {
+            max-width: 300px;
+            width: 100%;
+        }
+
+        .wrapper-p-form-1 p{
+            padding: 0 0 0 70px;
+            max-width: 300px;
+            width: 100%;
+        }
+
+        .wrapper-p-about p {
+            max-width: 150px;
+            padding: 0 0 0 126px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -134,11 +155,16 @@ background-color:white;
         <a href="{% url 'job:vacancy_list' %}">Список вакансий</a>
         <a href="{% url 'auth:login' %}">Войти</a>
         <a href="{% url 'auth:logout' %}">Выйти</a>
+        {% if perms.job_app.add_vacancy %}
+            <a href="{% url 'job:get-pdf-1' %}">pdf1</a>
+            <a href="{% url 'job:get-pdf-2' %}">pdf2</a>
+            <a href="{% url 'job:get-pdf-3' %}">pdf3</a>
+        {% endif %}
     </div>
     <div class="wrapper-content">
-    {% block content %}
+        {% block content %}
 
-    {% endblock %}
+        {% endblock %}
     </div>
 </div>
 </body>
